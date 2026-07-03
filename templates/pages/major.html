@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% load static %} {% block page_stylesheet %}
+
+<link rel="stylesheet" href="{% static 'mpook/css/major.css' %}" />
+
+{% endblock %} {% block content %}
+<h2>add new sign:</h2>
+<form method="POST">
+  {% csrf_token %} {{ my_form.as_p }} <button type="submit">save</button>
+</form>
+<h2>recoreds now</h2>
+<ul>
+  {% for item in my_data %}
+  <li>
+    Email: {{ item.Email }} | password: {{ item.password }} | google: {{
+    item.google }}
+  </li>
+
+  {% empty %}
+  <li>no data Admin.</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

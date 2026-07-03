@@ -1,0 +1,52 @@
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+    "username": "mpook",
+    "password": "mook55"
+}
+###
+
+GET  http://127.0.0.1:8000/communities/ 
+
+###
+
+POST  http://127.0.0.1:8000/communities/
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgyODI2Mzc3LCJpYXQiOjE3ODI4MjYwNzcsImp0aSI6ImRmNGM4YWJmNjE2MDRjNDJiZThjYWQ3MmFjMjQzMjAwIiwidXNlcl9pZCI6IjEifQ.0lZo52jKkJ8BHpsTDZkOx9Yfi6GwaLkKiYBeTJRll9M
+
+{
+    "name": "برمجة"
+}
+
+###
+GET http://127.0.0.1:8000/Forums/
+
+###
+
+GET http://127.0.0.1:8000/profiles/
+
+###
+
+GET http://127.0.0.1:8000/posts/
+
+###
+
+GET http://127.0.0.1:8000/answers/
+
+###
+
+GET http://127.0.0.1:8000/searches/
+
+###
+
+GET http://127.0.0.1:8000/reviews/
+
+###
+
+GET http://127.0.0.1:8000/learning_paths/
+
+###
+
+GET http://127.0.0.1:8000/pathsteps/
+

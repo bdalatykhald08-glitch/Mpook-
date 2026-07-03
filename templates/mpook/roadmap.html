@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %} {% for n in ned %}
+<div class="resourse">
+  <h2>{{n.name}}</h2>
+  <p>skill: {{n.skill}}</p>
+  <img src="{{n.image.urls}}" alt="{{n.name}}" />
+</div>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">save</button>
+</form>
+{% endfor %} {% endblock content %}

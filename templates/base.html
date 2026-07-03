@@ -1,0 +1,29 @@
+{% load static %}
+
+</doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Road for self-learn"/>
+    <title>MoopK</title>
+    <link rel="stylesheet" href="{% static 'mpook/css/base.css' %}" />
+    {% block page_stylesheet %}
+    {% endblock  %}
+  </head>
+  <body>
+    <div>
+      <header>
+            <ul>
+              <li><a href="/major">major</a></li>
+              <li><a href="/masar">masar</a></li>
+              <li><a href="/blog">blog</a></li>
+            </ul>
+         
+      </header>
+      <main>
+          {% block content %} 
+          {% endblock content %}    
+      </main>
+    </div>
+  </body>
+</html>
