@@ -45,10 +45,11 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'mpook',
     'pages',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.cors.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
